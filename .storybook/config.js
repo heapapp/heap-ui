@@ -1,5 +1,6 @@
-import { configure, addParameters } from "@storybook/react";
+import { configure, addParameters, addDecorator } from "@storybook/react";
 import { themes } from "@storybook/theming";
+import ThemeDecorator from "./themeDecorator";
 
 const heapTheme = {
   ...themes.dark,
@@ -13,5 +14,7 @@ addParameters({
     theme: heapTheme
   }
 });
+
+addDecorator(ThemeDecorator);
 
 configure(require.context("../src", true, /\.stories\.(js|jsx)$/), module);
