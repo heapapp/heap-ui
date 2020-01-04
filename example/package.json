@@ -1,0 +1,21 @@
+{
+  "name": "docs",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@heapapp/ui": "link:..",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "^1.1.4"
+  },
+  "scripts": {
+    "build-story": "build-storybook -c .storybook -o build",
+    "story": "start-storybook"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@storybook/react": "^5.2.8",
+    "babel-loader": "^8.0.6"
+  }
+}
