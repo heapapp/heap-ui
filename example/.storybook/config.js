@@ -3,6 +3,7 @@ import { configure, addDecorator, addParameters } from '@storybook/react'
 import { themes } from '@storybook/theming'
 
 import { HeapThemeProvider } from '@heapapp/ui'
+import '../src/global.css'
 
 const heapTheme = {
    ...themes.dark,
