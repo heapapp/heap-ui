@@ -1,3 +1,3 @@
-import TagGroup from './TagGroup/index.jsx'
+import TagGroup from './TagGroup'
 
 export { TagGroup }

@@ -10,7 +10,7 @@ import pkg from './package.json'
 
 export default {
    input: 'src/index.js',
-   external: ['stream'],
+   external: ['stream', 'react', 'react-dom', 'styled-components'],
    output: [
       {
          file: pkg.main,
@@ -33,7 +33,9 @@ export default {
       babel({
          exclude: 'node_modules/**'
       }),
-      resolve(),
+      resolve({
+         extensions: ['.js', '.jsx']
+      }),
       commonjs({
          include: 'node_modules/**',
          namedExports: {

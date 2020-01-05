@@ -8,7 +8,7 @@ import {
    Tag
 } from './components/atoms'
 import { TagGroup } from './components/molecules'
-import HeapThemeProvider from './components/HeapThemeProvider/index.jsx'
+import HeapThemeProvider from './components/HeapThemeProvider'
 
 export {
    TextButton,

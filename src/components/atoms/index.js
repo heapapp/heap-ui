@@ -1,7 +1,7 @@
-import { TextButton, IconButton, ComboButton } from './Button/index.jsx'
-import Anchor from './Anchor/index.jsx'
-import Heading from './Heading/index.jsx'
-import Para from './Para/index.jsx'
-import Tag from './Tag/index.jsx'
+import { TextButton, IconButton, ComboButton } from './Button'
+import Anchor from './Anchor'
+import Heading from './Heading'
+import Para from './Para'
+import Tag from './Tag'
 
 export { TextButton, IconButton, ComboButton, Anchor, Heading, Para, Tag }
