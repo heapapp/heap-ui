@@ -4,8 +4,10 @@ import {
    ComboButton,
    Anchor,
    Heading,
-   Para
+   Para,
+   Tag
 } from './components/atoms'
+import { TagGroup } from './components/molecules'
 import HeapThemeProvider from './components/HeapThemeProvider/index.jsx'
 
 export {
@@ -15,5 +17,7 @@ export {
    Anchor,
    Heading,
    Para,
+   Tag,
+   TagGroup,
    HeapThemeProvider
 }
