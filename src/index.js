@@ -7,7 +7,7 @@ import {
    Para,
    Tag
 } from './components/atoms'
-import { TagGroup } from './components/molecules'
+import { TagGroup, ButtonGroup } from './components/molecules'
 import HeapThemeProvider from './components/HeapThemeProvider'
 
 export {
@@ -19,5 +19,6 @@ export {
    Para,
    Tag,
    TagGroup,
+   ButtonGroup,
    HeapThemeProvider
 }

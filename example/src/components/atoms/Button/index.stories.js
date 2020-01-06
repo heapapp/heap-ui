@@ -1,13 +1,13 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import { TextButton, IconButton, ComboButton } from '@heapapp/ui'
+import { TextButton, IconButton, ComboButton, ButtonGroup } from '@heapapp/ui'
 
 import { LikeIcon, GearsIcon, HeartIcon } from '../../../assets/icons'
 
 storiesOf('Button/Text Button', module)
    .add('Solid', () => (
-      <div>
+      <ButtonGroup align='left'>
          <TextButton type='solid' typeColor='blue.400'>
             Primary
          </TextButton>
@@ -20,10 +20,10 @@ storiesOf('Button/Text Button', module)
          <TextButton type='solid' typeColor='success'>
             Success
          </TextButton>
-      </div>
+      </ButtonGroup>
    ))
    .add('Outline', () => (
-      <div>
+      <ButtonGroup align='left'>
          <TextButton type='outline' typeColor='blue.400'>
             Primary
          </TextButton>
@@ -36,11 +36,11 @@ storiesOf('Button/Text Button', module)
          <TextButton type='outline' typeColor='success'>
             Success
          </TextButton>
-      </div>
+      </ButtonGroup>
    ))
 
 storiesOf('Button', module).add('Icon Button', () => (
-   <div>
+   <ButtonGroup align='left'>
       <IconButton>
          <LikeIcon />
       </IconButton>
@@ -50,12 +50,12 @@ storiesOf('Button', module).add('Icon Button', () => (
       <IconButton>
          <HeartIcon />
       </IconButton>
-   </div>
+   </ButtonGroup>
 ))
 
 storiesOf('Button/Combo Button', module)
    .add('Icon on Left', () => (
-      <div>
+      <ButtonGroup align='left'>
          <ComboButton type='solid' typeColor='blue.400'>
             <LikeIcon />
             Like
@@ -64,10 +64,10 @@ storiesOf('Button/Combo Button', module)
             <GearsIcon />
             Settings
          </ComboButton>
-      </div>
+      </ButtonGroup>
    ))
    .add('Icon on Right', () => (
-      <div>
+      <ButtonGroup align='left'>
          <ComboButton type='solid' typeColor='blue.400'>
             Favourites
             <HeartIcon />
@@ -76,5 +76,5 @@ storiesOf('Button/Combo Button', module)
             Account Settings
             <GearsIcon />
          </ComboButton>
-      </div>
+      </ButtonGroup>
    ))
