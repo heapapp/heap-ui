@@ -22,9 +22,6 @@ addDecorator(withA11y)
 
 addParameters({
    options: {
-      showNav: true,
-      showPanel: true,
-      panelPosition: 'bottom',
       theme: heapTheme
    }
 })
