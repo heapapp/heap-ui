@@ -22,9 +22,11 @@ import ReactDOM from 'react-dom'
 import {HeapThemeProvider, TextButton} from '@heapapp/ui'
 
 const App = () => (
-   <TextButton type='solid' typeColor='blue.400'>
-      Primary
-   </TextButton>
+   <HeapThemeProvider>
+      <TextButton type='solid' typeColor='blue.400'>
+         Primary
+      </TextButton>
+   </HeapThemeProvider>
 )
 
 ReactDOM.render(<App/>, document.getElementById('root'))
