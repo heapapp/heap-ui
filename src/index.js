@@ -10,7 +10,8 @@ import {
    Input,
    Label,
    InputError,
-   TextArea
+   TextArea,
+   Select
 } from './components/atoms'
 import { TagGroup, ButtonGroup } from './components/molecules'
 import HeapThemeProvider from './components/HeapThemeProvider'
@@ -26,6 +27,7 @@ export {
    FormItem,
    Input,
    Label,
+   Select,
    InputError,
    TextArea,
    TagGroup,

@@ -3,7 +3,7 @@ import Anchor from './Anchor'
 import Heading from './Heading'
 import Para from './Para'
 import Tag from './Tag'
-import { FormItem, Input, Label, InputError, TextArea } from './Form'
+import { FormItem, Input, Label, InputError, TextArea, Select } from './Form'
 
 export {
    TextButton,
@@ -17,5 +17,6 @@ export {
    Input,
    InputError,
    Label,
-   TextArea
+   TextArea,
+   Select
 }
