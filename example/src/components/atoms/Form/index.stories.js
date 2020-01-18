@@ -1,9 +1,25 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import { Input, InputError, FormItem, Label, TextArea } from '@heapapp/ui'
+import {
+   Input,
+   InputError,
+   FormItem,
+   Label,
+   TextArea,
+   Select
+} from '@heapapp/ui'
 
 storiesOf('Form/All Fields', module).add('Normal', () => {
+   const [selected, setSelected] = React.useState('')
+   const [options] = React.useState([
+      { id: 1, title: 'Option 1' },
+      { id: 2, title: 'Option 2' },
+      { id: 3, title: 'Option 3' },
+      { id: 4, title: 'Option 4' },
+      { id: 5, title: 'Option 5' },
+      { id: 6, title: 'Option 6' }
+   ])
    const [form, setForm] = React.useState({
       username: '',
       email: '',
@@ -11,6 +27,7 @@ storiesOf('Form/All Fields', module).add('Normal', () => {
       description: ''
    })
 
+   const onSelect = option => setSelected(option)
    const handleChange = e => {
       const { value, name } = e.target
       setForm(form => ({
@@ -49,6 +66,14 @@ storiesOf('Form/All Fields', module).add('Normal', () => {
                value={form.password}
                placeholder='Enter the password'
                onChange={e => handleChange(e)}
+            />
+         </FormItem>
+         <FormItem>
+            <Select
+               options={options}
+               selected={selected}
+               onSelect={onSelect}
+               placeholder='Select Topic'
             />
          </FormItem>
          <FormItem>
