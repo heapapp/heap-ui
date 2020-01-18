@@ -8,6 +8,10 @@ export const StyledSelect = styled.div(
       height: ${size.xl}px;
       border-radius: ${size.xs}px;
       border: 1px solid ${colors.dark['200']};
+      &:hover,
+      &:focus {
+         background: ${colors.dark['200']};
+      }
    `
 )
 
@@ -17,10 +21,6 @@ export const StyledSelectInput = styled.div(
       align-items: center;
       height: ${size.xl - 2}px;
       grid-template-columns: 1fr ${size.lg}px ${size.lg}px;
-      &:hover,
-      &:focus {
-         background: ${colors.dark['200']};
-      }
       div:first-child {
          display: flex;
          padding: 0 12px;
